@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 /* Header Styling */
 header{
@@ -24,10 +25,22 @@ header > h1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:4rem;
 }
 
 /* Image styling */
 img{
-    width:22vw;
+    width:21vw;
     height:51vh;
+    border: 1px solid black;
+    border-radius: 5rem;
+    margin:2vh 0vh 0vh 0vh;
+    transition: box-shadow 0.2s ease;
+}
+img:hover{
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.557);
+    cursor: pointer;
+    border: none;
+    transition: box-shadow 0.2s ease;
 }
